@@ -1,4 +1,4 @@
-# NodeJS cli Proof of concept
+# NodeJS CLI Proof of concept
 
 This is a poc for the interactive cli development using nodejs
 
