@@ -2,7 +2,7 @@
   "name": "cli_poc",
   "version": "1.0.0",
   "description": "cli tools poc using inquirer",
-  "main": "index.ts",
+  "main": "./src/index.ts",
   "type": "module",
   "bin": {
     "cli_poc": "./dist/index.js"
