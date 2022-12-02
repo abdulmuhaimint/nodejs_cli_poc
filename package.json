@@ -20,7 +20,8 @@
     "typescript": "^4.9.3"
   },
   "dependencies": {
-    "inquirer": "^9.1.4",
-    "inquirer-autocomplete-prompt": "^3.0.0"
+    "inquirer": "^8.2.5",
+    "inquirer-autocomplete-prompt": "^2.0.0",
+    "inquirer-checkbox-plus-prompt": "^1.4.1"
   }
 }

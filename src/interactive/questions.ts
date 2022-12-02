@@ -6,7 +6,7 @@ export const questions: QuestionCollection = [
   {
     type: "list",
     name: "Language",
-    message: "Choose the language (normal select)",
+    message: "Choose a language (normal select)",
     choices: languageChoices,
   },
   {
@@ -17,8 +17,22 @@ export const questions: QuestionCollection = [
   },
   {
     type: "autocomplete",
-    name: "Operating systems",
-    message: "Select an operating system (search select)",
+    name: "Operating system",
+    message: "Choose an operating system (search select)",
     source: (answersSoFar, input) => searchArray(osChoices, input),
+  },
+  {
+    type: "checkbox-plus",
+    name: "Operating systems",
+    message: "Choose the operating systems (search checkbox)",
+    source: (answersSoFar, input) => searchArray(osChoices, input),
+    highlight: true,
+    searchable: true,
+  },
+  {
+    type:"input",
+    name:"output",
+    message:"Enter the output file name",
+    default:"output.json"
   },
 ];
