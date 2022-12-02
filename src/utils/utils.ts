@@ -5,6 +5,11 @@ export const writeFile = async (filename: string, data: string) => {
   await fs.writeFile(path.join(process.cwd(), filename), data);
 };
 
-export const arraySearch = async (arr: [string], searchKey) => {
-  return arr.filter((str) => str.includes(searchKey))
-}
+export const searchArray = async (arr: string[], searchKey: string) => {
+  if (searchKey && searchArray.length) {
+    return arr.filter((str) =>
+      str.toLowerCase().includes(searchKey.toLowerCase())
+    );
+  }
+  return []
+};
